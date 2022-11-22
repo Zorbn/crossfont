@@ -169,8 +169,6 @@ impl crate::Rasterize for BitmapRasterizer {
             return Err(Error::PlatformError("Can't determine font strikeout position".into()));
         }
 
-        println!("{} {} {} {} {} {} {} {}", font_atlas_width, font_atlas_height, padding_width, average_advance, underline_position, underline_thickness, strikeout_position, strikeout_thickness);
-
         let key = FontKey::next();
         self.keys.insert(desc.clone(), key);
         self.fonts.insert(key, BitmapFont {
