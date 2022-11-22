@@ -1,3 +1,6 @@
+# This fork
+This fork is used by my Alacritty fork. Unlike the original it supports bitmap fonts supplied via images.
+
 # crossfont
 
 crossfont is a cross-platform Rust library for loading fonts and rasterizing
