@@ -252,7 +252,7 @@ impl crate::Rasterize for DirectWriteRasterizer {
         }
     }
 
-    fn kerning(&mut self, left: GlyphKey, right: GlyphKey) -> (f32, f32) {
+    fn kerning(&mut self, _left: GlyphKey, _right: GlyphKey) -> (f32, f32) {
         (0., 0.)
     }
 

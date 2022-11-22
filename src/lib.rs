@@ -3,6 +3,7 @@
 //! CoreText is used on macOS.
 //! DirectWrite is used on Windows.
 //! FreeType is used everywhere else.
+//! Or, bitmaps can be used anywhere.
 
 #![deny(clippy::all, clippy::if_not_else, clippy::enum_glob_use)]
 
@@ -24,6 +25,8 @@ pub use directwrite::DirectWriteRasterizer as Rasterizer;
 pub mod darwin;
 #[cfg(target_os = "macos")]
 pub use darwin::CoreTextRasterizer as Rasterizer;
+
+pub mod bitmap;
 
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct FontDesc {
