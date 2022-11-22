@@ -1,5 +1,5 @@
 # This fork
-This fork is used by my Alacritty fork. Unlike the original it supports bitmap fonts supplied via images.
+This fork is used by my Alacritty fork. Changes are on the bitmap-image-fonts branch. Unlike the original it supports bitmap fonts supplied via images.
 
 # crossfont
 
